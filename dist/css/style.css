@@ -1,0 +1,27 @@
+.top-bar {
+  background-color: #000000;
+  height: 40px; }
+  .top-bar .top-bar-wrapper {
+    width: 90%;
+    max-width: 1254px;
+    margin: 0px auto;
+    position: relative; }
+  .top-bar .top-bar__item {
+    color: #ffffff;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 11px;
+    line-height: 38px;
+    text-transform: uppercase;
+    margin-right: 40px;
+    font-weight: 300;
+    text-decoration: none; }
+    .top-bar .top-bar__item:hover {
+      color: #00d1ff; }
+  .top-bar .top-bar-authorithation {
+    position: absolute;
+    right: 0px;
+    top: 0px; }
+    .top-bar .top-bar-authorithation .flaticon-social {
+      color: #00d1ff;
+      margin: 0px 10px 0px 0px; }
