@@ -1,1 +1,5 @@
-@import "header/header.scss"
+body {
+    font-family: 'Oswald', sans-serif;
+}
+@import "header/header.scss";
+@import "first-screen/first-screen.scss"
