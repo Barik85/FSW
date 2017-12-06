@@ -336,6 +336,36 @@ a {
   #Capa_1:hover {
     fill: #12abbb; }
 
+.product-placement {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  max-width: 1254px;
+  margin: 0px auto; }
+  .product-placement .product-placement-left img {
+    width: 100%; }
+  .product-placement .product-placement-right img {
+    width: 100%; }
+  .product-placement .product-placement-left, .product-placement .product-placement-right {
+    position: relative; }
+  .product-placement .cta-black {
+    position: absolute;
+    background-color: #000000;
+    color: #ffffff;
+    left: 50%;
+    margin-left: -95px;
+    bottom: 50px;
+    font-size: 20px;
+    width: 190px;
+    height: 55px;
+    text-align: center;
+    line-height: 51px; }
+    .product-placement .cta-black:hover {
+      color: #000000;
+      background-color: #ffffff; }
+
 h2 {
   color: #000000;
   font-family: 'Oswald', sans-serif;

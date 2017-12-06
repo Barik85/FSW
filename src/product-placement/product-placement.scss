@@ -1,0 +1,32 @@
+.product-placement {
+    display: flex;
+    width: 90%;
+    max-width: 1254px;
+    margin: 0px auto;
+    .product-placement-left img {
+        width: 100%;
+    }
+    .product-placement-right img {
+        width: 100%;
+    }
+    .product-placement-left, .product-placement-right {
+        position: relative;
+    }
+    .cta-black {
+        position: absolute;
+        background-color: #000000;
+        color: #ffffff;
+        left: 50%;
+        margin-left: -95px;
+        bottom: 50px;
+        font-size: 20px;
+        width: 190px;
+        height: 55px;
+        text-align: center;
+        line-height: 51px;
+        &:hover {
+            color: #000000;
+            background-color: #ffffff;
+        }
+    }
+}
