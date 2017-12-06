@@ -1,0 +1,51 @@
+h2 Just landed
+section.product-slider
+    .left-arrow
+        include ../../assets/left-arrow-angle.svg
+
+    .product-slider-wrapper
+        mixin slider-item(img, price, old_price, name, brand)      
+            .product-slider-item        
+                .itame-image
+                    a(href="#")
+                       img(src=`img/${img}`, alt="")
+                .info
+                    span.price.clearfix #{price}
+                    p
+                        a(href="#").product-name #{name} 
+                    span.old-price.clearfix #{old_price}
+                    p.brand-name #{brand}
+                
+        +slider-item('shoes1.jpg', '$29.9', '$35.5', 'SUNSET BLACK SUEDE', 'Naughty monkey')              
+        +slider-item('shoes2.jpg', '$29.9', '$35.5', 'SUNSET BLACK SUEDE', 'Naughty monkey')              
+        +slider-item('shoes3.jpg', '$29.9', '$35.5', 'SUNSET BLACK SUEDE', 'Naughty monkey')              
+        +slider-item('shoes4.jpg', '$29.9', '$35.5', 'SUNSET BLACK SUEDE', 'Naughty monkey')              
+        +slider-item('shoes1.jpg', '$29.9', '$35.5', 'SUNSET BLACK SUEDE', 'Naughty monkey')              
+        +slider-item('shoes2.jpg', '$29.9', '$35.5', 'SUNSET BLACK SUEDE', 'Naughty monkey')              
+        +slider-item('shoes3.jpg', '$29.9', '$35.5', 'SUNSET BLACK SUEDE', 'Naughty monkey')              
+        +slider-item('shoes4.jpg', '$29.9', '$35.5', 'SUNSET BLACK SUEDE', 'Naughty monkey')        
+        
+      
+    .right-arrow
+        include ../../assets/right-arrow-angle.svg
+script(type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js")
+script(type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+script(type="text/javascript" src="slick/slick.min.js")
+script.
+    $(document).ready(function(){
+    $('.product-slider-wrapper').slick({
+    setting-name: setting-value
+    });
+    });
+    $('.product-slider-wrapper').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+    });
+    $('.product-slider-wrapper').slick({
+            prevArrow: $(".left-arrow"),
+            nextArrow: $(".right-arrow"),
+        });
+    
+
+    

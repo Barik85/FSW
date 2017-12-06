@@ -2,4 +2,21 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 @import "header/header.scss";
-@import "first-screen/first-screen.scss"
+@import "first-screen/first-screen.scss";
+@import "product-slider/product-slider.scss";
+
+h2 {
+    color: #000000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 29px;
+    text-align: center;
+    text-transform: uppercase; 
+    margin: 40px auto;   
+}
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    }
