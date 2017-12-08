@@ -10,8 +10,10 @@
 }
 .product-slider-item {
     position: relative;
+    display: inline-block;
     max-width: 292px;
     width: 23%;
+    text-align: left;
     .price {
         float: right;
     }
@@ -23,9 +25,12 @@
     width: 100%;
 }
 .product-slider-wrapper {
-    display: flex;
-    justify-content: space-between;
     max-width: 1120px;
+    text-align: center;
+    .slide {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 .product-name, .price {
     font-size: 17px;
